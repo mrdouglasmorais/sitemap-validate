@@ -3,7 +3,10 @@ import xml.etree.ElementTree as ET
 
 def download_sitemap(url):
     try:
-        response = requests.get(url)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+        }
+        response = requests.get(url, headers=headers)
         if response.status_code == 200:
             return response.content
         else:
