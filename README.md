@@ -8,6 +8,7 @@
 ## Para instalar a dependência de requisicão:
 
 ```pip install requests```
+```pip install requests beautifulsoup4```
 
 
 ## Para rodar o projeto:
